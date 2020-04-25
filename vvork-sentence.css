@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#anim{
+	width:1000px;
+	height:500px;
+	background:cyan;
+	position:relative;
+}
+#anim h1{
+	position:absolute;
+	top:200px;
+	left:100px;
+	width:50ch;
+	animation:example 4s steps(30) 2;
+	animation-fill-mode:forwards;
+	border-right:4px solid black;
+	overflow:hidden;
+	white-space:nowrap;
+	
+}
+@keyframes example{
+	from{width:0ch}
+	to{width:50ch}
+}
